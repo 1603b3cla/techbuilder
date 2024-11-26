@@ -1,0 +1,115 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(220.55deg, #4063BC 0%, #6B0013 100%);;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    animation: animate__pulse;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+/* Fondo oscuro transparente */
+}
+
+header .logo h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+header .logo i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.auth-links a, .user-info a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1em;
+}
+
+.auth-links a:hover, .user-info a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de contenido */
+.content {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(19, 18, 18, 0.5); /* Fondo oscuro para la sección */
+    margin-top: 40px;
+    border-top-left-radius:10px;
+    background-clip:border-box;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(27, 26, 26, 0.7);
+    margin-top: 120px;
+}
+
+/* Asegúrate de que el texto y enlaces sean legibles */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Barra de categorías */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.categories a {
+    color: #f3f4f6;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+.categories a:hover {
+    background-color: #a78bfa;
+    border-radius: 0.375rem;
+}
+
+/* Secciones de categorías */
+.category-section {
+    padding: 2rem;
+    background-color: #0a0a0a;
+    color: #f3f4f6;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.category-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category-section ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}

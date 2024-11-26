@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBuilder</title>
+    <link rel="stylesheet" href="/style/style_index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><i class="fas fa-cogs"></i> TechBuilder</h1>
+        </div>
+        <% if (!user) { %>
+            <div class="auth-links">
+                <a href="/login">Iniciar Sesión</a>
+                <a href="/register">Registrarse</a>
+            </div>
+        <% } else { %>
+            <nav class="categories">
+                <a href="#componentes-esenciales">Componentes Esenciales</a>
+                <a href="#perifericos">Periféricos y Extras</a>
+                <a href="#cables-herramientas">Cables y Herramientas</a>
+                <a href="/profile">Perfil</a>
+                <a href="/auth/logout">Cerrar Sesión</a>
+            </nav>
+        <% } %>
+    </header>
+
+    <section class="content">
+        <h2>¡Bienvenido a TechBuilder!</h2>
+        <p>En TechBuilder podrás encontrar las mejores opciones para armar tu PC personalizada.</p>
+        <% if (!user) { %>
+            <p>Inicia sesión o regístrate para comenzar.</p>
+        <% } else { %>
+            <p>Explora las categorías y personaliza tu experiencia.</p>
+        <% } %>
+    </section>
+
+    <section id="componentes-esenciales" class="category-section">
+        <h3>Componentes Esenciales</h3>
+        <ul>
+            <li>Procesador (CPU)</li>
+            <li>Placa base (Motherboard)</li>
+            <li>Memoria RAM</li>
+            <li>Unidad de almacenamiento (SSD/HDD)</li>
+            <li>Fuente de poder (PSU)</li>
+            <li>Tarjeta gráfica (GPU)</li>
+            <li>Gabinete (Case)</li>
+            <li>Sistema de enfriamiento</li>
+        </ul>
+    </section>
+
+    <section id="perifericos" class="category-section">
+        <h3>Periféricos y Extras</h3>
+        <ul>
+            <li>Monitor</li>
+            <li>Teclado</li>
+            <li>Mouse</li>
+            <li>Sistema operativo</li>
+            <li>Tarjeta de sonido</li>
+            <li>Unidad lectora</li>
+            <li>Conexión de red</li>
+            <li>Altavoces o audífonos</li>
+            <li>Software adicional</li>
+        </ul>
+    <footer>
+        <p>&copy; 2024 TechBuilder. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

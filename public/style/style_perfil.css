@@ -1,0 +1,117 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/images/background.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1c1c1d;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+header .logo i {
+    margin-right: 10px;
+    color: #6b46c1;
+}
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar a:hover {
+    color: #a78bfa;
+}
+
+.nav-bar i {
+    margin-right: 5px;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 2rem;
+    background-color: #2d2f36;
+    border-radius: 8px;
+    color: #f3f4f6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background: #1c1c1d;
+    color: #f3f4f6;
+    font-size: 1rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.update-btn {
+    padding: 0.75rem 2rem;
+    background-color: #6b46c1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.update-btn:hover {
+    background-color: #553c9a;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1c1c1d;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
