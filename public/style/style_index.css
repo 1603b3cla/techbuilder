@@ -1,17 +1,18 @@
 /* Estilo general para el cuerpo */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(220.55deg, #4063BC 0%, #6B0013 100%);;
+    background-color: rgb(255, 255, 255);
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #ffffff;
     margin: 0;
-    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
 
 /* Estilos para el encabezado */
 header {
-    animation: animate__pulse;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,31 +21,47 @@ header {
 /* Fondo oscuro transparente */
 }
 
-header .logo h1 {
-    font-size: 2em;
-    color: #fff;
+header h1 {
+    font-size: 3em; /* Tamaño del texto */
+    color: #373030; /* Color del texto */
+    padding-right: 700px; /* Espaciado a la derecha */
+    font-weight: bold; /* Negritas */
+    font-family: 'Arial', sans-serif; /* Cambia el estilo de la fuente */
 }
 
 header .logo i {
-    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    margin-right: 100px; /* Espacio entre el ícono y el texto */
 }
 
 .auth-links a, .user-info a {
-    color: #fff;
+  
     text-decoration: none;
     margin: 0 10px;
     font-size: 1.1em;
+    display: inline-block; /* Para que se comporte como un botón */
+    text-decoration: none; /* Elimina la línea de enlace */
+    color: #4b4453; /* Color del texto */
+    background-color: #cbcbcb;/* Color de fondo inicial */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin bordes */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    font-family: Arial, sans-serif; /* Fuente */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar */
+    transition: background-color 0.3s ease; 
 }
 
 .auth-links a:hover, .user-info a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: #4b4453; 
 }
 
 /* Sección de contenido */
 .content {
     text-align: center;
     padding: 50px;
-    background-color: rgba(19, 18, 18, 0.5); /* Fondo oscuro para la sección */
+    /* Fondo oscuro para la sección */
     margin-top: 40px;
     border-top-left-radius:10px;
     background-clip:border-box;
@@ -54,11 +71,31 @@ header .logo i {
 }
 
 /* Pie de página */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(27, 26, 26, 0.7);
-    margin-top: 120px;
+.footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Color de texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    font-family: 'Arial', sans-serif; /* Tipo de letra */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave en la parte superior */
+}
+
+.footer p {
+    margin: 0; /* Elimina márgenes predeterminados */
+    font-size: 1.2em; /* Tamaño de fuente para el texto */
+}
+
+.footer a {
+    color: #f1c40f; /* Color dorado para enlaces */
+    text-decoration: none; /* Elimina subrayado en los enlaces */
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el ratón */
 }
 
 /* Asegúrate de que el texto y enlaces sean legibles */
@@ -112,4 +149,63 @@ a:hover {
 .category-section ul li {
     margin-bottom: 0.5rem;
     font-size: 1rem;
+}
+div .card{
+    padding-right:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:20px;
+    transform:translatex(4px) translatey(0px);
+    margin-bottom:0px;
+    border-top-right-radius:17px;
+    border-top-left-radius:17px;
+    border-bottom-left-radius:17px;
+    border-bottom-right-radius:17px;
+   }
+   
+   .logo {
+    display: block;              /* Hace que la imagen sea un bloque */
+    margin-top: auto;
+    margin-left: 50px;  /* Centra la imagen horizontalmente */
+    max-width: 60px;             /* Tamaño más pequeño (ajusta según necesites) */
+    height: auto;                /* Mantiene las proporciones originales */
+    border-radius: 10%;          /* Bordes ligeramente redondeados (opcional) */
+    transform:translatex(8px) translatey(-11px);
+  }
+  /* Image */
+  #carouselExampleCaptions .carousel-item img {
+    min-width: 0px; /* Opcional si es necesario limitar el ancho mínimo */
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Asegura que las márgenes se apliquen correctamente */
+}
+
+#carouselExampleCaptions .carousel-item .carousel-caption {
+     /* Borde con color semi-transparente */
+    background-color: rgba(46, 46, 46, 0.3); /* Fondo transparente con un toque de color blanco */
+    padding: 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Esquinas redondeadas (opcional) */
+}
+.btn-primary {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde por defecto */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    text-align: center; /* Centra el texto en el botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 20%; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el color y tamaño */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color del fondo cuando se pasa el cursor */
+    transform: scale(1.05); /* Efecto de aumento del tamaño */
+}
+
+.btn-primary:focus {
+    outline: none; /* Elimina el contorno cuando se hace foco */
 }

@@ -101,7 +101,12 @@ app.post('/profile/update', authMiddleware, async (req, res) => {
 
 
 // Inicia el servidor
-const PORT = 3001; // Puerto del servidor
+const PORT = 3000; // Puerto del servidor
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
+app.use((req, res, next) => {
+    console.log(`Solicitud para: ${req.url}`);
+    next();
+});
+
