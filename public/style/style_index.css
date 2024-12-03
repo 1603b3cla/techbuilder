@@ -1,10 +1,10 @@
 /* Estilo general para el cuerpo */
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(2, 1, 1);
     background-size: cover;
     background-position: center;
-    color: #ffffff;
+    color: #000000;
     margin: 0;
     padding-left: 30px;
     padding-right: 30px;
@@ -24,7 +24,7 @@ header {
 header h1 {
     font-size: 3em; /* Tamaño del texto */
     color: #373030; /* Color del texto */
-    padding-right: 700px; /* Espaciado a la derecha */
+    padding-right: 600px; /* Espaciado a la derecha */
     font-weight: bold; /* Negritas */
     font-family: 'Arial', sans-serif; /* Cambia el estilo de la fuente */
 }
@@ -44,7 +44,7 @@ header .logo i {
     background-color: #cbcbcb;/* Color de fondo inicial */
     padding: 10px 20px; /* Espaciado interno del botón */
     border: none; /* Sin bordes */
-    border-radius: 20px; /* Bordes redondeados */
+    border-radius: 99px; /* Bordes redondeados */
     font-size: 16px; /* Tamaño de fuente */
     font-family: Arial, sans-serif; /* Fuente */
     cursor: pointer; /* Cambia el cursor a una mano al pasar */
@@ -186,26 +186,29 @@ div .card{
 
 #carouselExampleCaptions .carousel-item .carousel-caption {
      /* Borde con color semi-transparente */
-    background-color: rgba(46, 46, 46, 0.3); /* Fondo transparente con un toque de color blanco */
+    background-color: rgb(110, 110, 110); /* Fondo transparente con un toque de color blanco */
     padding: 10px; /* Espaciado alrededor del texto */
-    border-radius: 5px; /* Esquinas redondeadas (opcional) */
+    border-radius: 99px; /* Esquinas redondeadas (opcional) */
+    color: #fff4c6;
 }
-.btn-primary {
-    background-color: #007bff; /* Color de fondo del botón */
+
+.custom-btn {
+    background-color: #28a745; /* Color de fondo (verde) */
     color: white; /* Color del texto */
-    border: none; /* Elimina el borde por defecto */
-    padding: 10px 20px; /* Espaciado dentro del botón */
-    text-align: center; /* Centra el texto en el botón */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 10px 20px; /* Tamaño del botón */
     font-size: 16px; /* Tamaño de la fuente */
-    border-radius: 20%; /* Bordes redondeados */
-    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el color y tamaño */
-}
-
-.btn-primary:hover {
-    background-color: #0056b3; /* Color del fondo cuando se pasa el cursor */
-    transform: scale(1.05); /* Efecto de aumento del tamaño */
-}
-
-.btn-primary:focus {
-    outline: none; /* Elimina el contorno cuando se hace foco */
-}
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Asegura que se comporte como un botón */
+    border: 2px solid #28a745; /* Borde del mismo color que el fondo */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centra el texto */
+    transition: all 0.3s ease; /* Transición suave para efectos */
+  }
+  
+  .custom-btn:hover {
+    background-color: #218838; /* Color al pasar el cursor */
+    color: #fff; /* Asegura que el texto siga siendo visible */
+    border-color: #1e7e34; /* Cambia el color del borde al pasar el cursor */
+  }
+  

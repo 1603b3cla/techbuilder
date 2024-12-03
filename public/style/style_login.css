@@ -157,3 +157,16 @@
         font-size: 0.9em;
     }
 }
+
+[data-bs-target="#carouselExampleCaptions"] {
+    background-color: yellow;
+    border: none; /* Opcional: elimina el borde */
+    width: 15px; /* Ajusta el tamaño según tus necesidades */
+    height: 15px;
+    border-radius: 50%; /* Los hace redondos */
+    margin: 5px; /* Espaciado entre botones */
+  }
+  
+  [data-bs-target="#carouselExampleCaptions"].active {
+    background-color: gold; /* Color diferente para el botón activo */
+  }
